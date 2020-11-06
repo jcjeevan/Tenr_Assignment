@@ -1,5 +1,3 @@
-# Login System
-
 ## Angular, Node, and MySQL
 
 1. cd backend
