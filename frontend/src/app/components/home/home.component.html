@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="navigation">
+        <p class="profile_name">Welcome {{username}}</p>
+        <p (click)="logout()" class="align-right">Logout</p>
+    </div>
+    <p *ngIf = "generic_user" class="generic">Welcome {{username}} !</p>
+    <div *ngIf = "admin_user" class="admin-layout">
+            <table class="table table-striped table-bordered table-sm row-border hover" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Registered Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     <tr *ngFor="let user of users">
+                           <td>{{user.id}}</td>
+                           <td>{{user.name}}</td>
+                           <td>{{user.email}}</td>
+                           <td>{{user.created_at | date}}</td>
+                       </tr>
+                    </tbody>
+                  </table>
+    </div>
+</div>

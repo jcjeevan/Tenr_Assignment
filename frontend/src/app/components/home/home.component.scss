@@ -1,0 +1,47 @@
+.admin-layout{
+    margin-top:10%;
+}
+
+
+.navigation{
+    position: absolute;
+    top: 0;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    background: #8bc34a;
+    padding: 10px;
+    display:flex;
+}
+
+thead{
+    background: #8bc34a;
+    color: white;
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    cursor:pointer;
+    position: absolute;
+    right: 2%;
+}
+
+.profile_name{
+    color: white;
+    margin-top: 11px;
+}
+
+.generic{
+    margin-top: 22%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+td{
+    text-align: center;
+}
